@@ -1,0 +1,50 @@
+  825  pwd
+  826  cd ..
+  827  ls -ltra
+  828  cat .git
+  829  cd .git
+  830  ls -ltr
+  831  cd ..
+  832  ls -ltr
+  833  cd ..
+  834  ls -ltr
+  835  ls -ltr
+  836  mkdir github_repo
+  837  cd gith*
+  838  ls -ltr
+  839  ls -ltr
+  840  git init
+  841  git clone git@github.com:KausarHina/loan_qualifier_app.git
+  842  ls -ltr
+  843  cd loa*
+  844  ls -ltr
+  845  cp -R /Users/kausarhina/Documents/FinTech_Workspace/module_2_challenge/loan_qualifier_app/* .
+  846  ls -ltr
+  847  git status
+  848  git add .
+  849  ls -ltra
+  850  git status
+  851  python --version
+  852  startdev
+  853  python --version
+  854  pwd
+  855  cp -R /Users/kausarhina/Documents/FinTech_Workspace/module_2_challenge/loan_qualifier_app/* .
+  856  ls -ltr
+  857  git status
+  858  git add .
+  859  git status
+  860  git commit -m "first commit for adding loan_qualifier_app code"
+  861  ls -ltr
+  862  git status
+  863  history 50 > terminal_history.txt
+  864  cat *.txt
+  865  history
+  866  history 10
+  867  history -50 -1 
+  868  clear
+  869  history -5 -1 
+  870  history -25 -1 
+  871  history -50 -1 
+  872  ls -ltr
+  873  rm *.txt
+  874  ls -ltr

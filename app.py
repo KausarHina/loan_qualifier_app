@@ -119,14 +119,23 @@ def save_qualifying_loans(qualifying_loans):
     if (response == False ) :
         return
 
-    csvpath = questionary.text("Enter a file path to save qualifying loans (.csv):").ask()
-    csvpath = Path(csvpath)    
+    qualifying_loans_count = len(qualifying_loans) 
+
+    if ( qualifying_loans_count == 0 ):
+        print(f"There is no qualifying loans to save")
+        return
+    else   :
+        csvpath = questionary.text("Enter a file path to save qualifying loans (.csv):").ask()
+        csvpath = Path(csvpath)    
 
     try:
         with open(csvpath, "w", newline="") as csvfile:
             csvwriter = csv.writer(csvfile, delimiter=',')  
             csvwriter.writerows(qualifying_loans)
-            print(f"The qualifying loans are saved in {csvpath} ")
+            if (qualifying_loans_count == 1 ) :
+                print(f"There is {qualifying_loans_count} qualifying loan, that is saved in {csvpath} ")
+            else :    
+                print(f"There are {qualifying_loans_count} qualifying loans, those are saved in {csvpath} ")
     except IOError as error:
             print(f"Error : Not able to write in given path : {csvpath}")
             return 
